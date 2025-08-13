@@ -1,0 +1,86 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url("../Imagenes/Fondo de pantalla.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  text-align: center;
+  padding: 15px 0px 0px 0px;
+  color: #0652dd;
+  font-size: 28px;
+  top: 0px;
+  z-index: 10;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.contenedor {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabla-container {
+  max-height: 472px;
+  overflow-y: auto;
+}
+
+tbody td {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+thead th {
+  background-color: #0052cc;
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+}
+
+th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 20px;
+  background-color: white;
+  font-size: 25px;
+  color: blue;
+}
+
+tr {
+  transition: all ease 300ms;
+  cursor: pointer;   
+}
+
+tr:hover {
+  background-color: rgba(0, 151, 230,0.5);
+  color: rgba(255, 242, 0,1.0);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 0px;
+}
+
+/* 🔹 Ajustes para móviles */
+@media (max-width: 768px) {
+  th, td {
+    font-size: 14px; /* Texto más pequeño */
+    padding: 6px;
+  }
+}
